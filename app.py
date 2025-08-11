@@ -28,6 +28,7 @@ def load_data():
     df.index = pd.to_datetime(df['time'])
     # Eliminar la columna original de fecha ya que ahora es el índice
     df = df.drop('time', axis=1)
+    ###
     return df
 
 # Cargar datos
